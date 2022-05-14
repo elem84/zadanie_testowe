@@ -63,4 +63,35 @@ class UserController extends AbstractController
             'form' => $form->createView(),
         ]);
     }
+
+    #[Route('/user/edit/{user}', name: 'user_edit')]
+    public function edit(Request $request, User $user): Response
+    {
+        return $this->render('user/edit.html.twig', [
+            'user' => $user,
+        ]);
+    }
+
+    #[Route('/user/tabGeneral/{user}', name: 'user_edit_tab_general')]
+    public function tabGeneral(Request $request, User $user): Response
+    {
+        $userDTOForm = new UserDTOForm();
+        $userDTOForm->setUsername($user->getUsername());
+
+        $form = $this->createForm(UserType::class, $userDTOForm);
+        $form->handleRequest($request);
+
+        return $this->render('user/tab-general.html.twig', [
+            'user' => $user,
+            'form' => $form->createView(),
+        ]);
+    }
+
+    #[Route('/user/tabDevices/{user}', name: 'user_edit_tab_devices')]
+    public function tabDevices(User $user): Response
+    {
+        return $this->render('user/tab-devices.html.twig', [
+            'user' => $user,
+        ]);
+    }
 }
