@@ -1001,6 +1001,13 @@
     "webpack-dev-server" "^4.0.0"
     "yargs-parser" "^20.2.4"
 
+"@tailwindcss/forms@^0.5.1":
+  "integrity" "sha512-QSwsFORnC2BAP0lRzQkz1pw+EzIiiPdk4e27vGQjyXkwJPeC7iLIRVndJzf9CJVbcrrIcirb/TfxF3gRTyFEVA=="
+  "resolved" "https://registry.npmjs.org/@tailwindcss/forms/-/forms-0.5.1.tgz"
+  "version" "0.5.1"
+  dependencies:
+    "mini-svg-data-uri" "^1.2.3"
+
 "@trysound/sax@0.2.0":
   "integrity" "sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA=="
   "resolved" "https://registry.npmjs.org/@trysound/sax/-/sax-0.2.0.tgz"
@@ -3357,6 +3364,11 @@
     "schema-utils" "^3.0.0"
     "webpack-sources" "^1.1.0"
 
+"mini-svg-data-uri@^1.2.3":
+  "integrity" "sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg=="
+  "resolved" "https://registry.npmjs.org/mini-svg-data-uri/-/mini-svg-data-uri-1.4.4.tgz"
+  "version" "1.4.4"
+
 "minimalistic-assert@^1.0.0":
   "integrity" "sha512-UtJcAD4yEaGtjPezWuO9wC4nwUnVH/8/Im3yEHQP4b67cXlD/Qr9hdITCU1xDbSEXg2XKNaP8jsReV7vQd00/A=="
   "resolved" "https://registry.npmjs.org/minimalistic-assert/-/minimalistic-assert-1.0.1.tgz"
@@ -4778,7 +4790,7 @@
   dependencies:
     "get-port" "^3.1.0"
 
-"tailwindcss@^3.0.18":
+"tailwindcss@^3.0.18", "tailwindcss@>=3.0.0 || >= 3.0.0-alpha.1":
   "integrity" "sha512-ihPTpEyA5ANgZbwKlgrbfnzOp9R5vDHFWmqxB1PT8NwOGCOFVVMl+Ps1cQQ369acaqqf1BEF77roCwK0lvNmTw=="
   "resolved" "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.0.18.tgz"
   "version" "3.0.18"
